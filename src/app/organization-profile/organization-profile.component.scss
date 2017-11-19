@@ -1,0 +1,71 @@
+#organization-profile-component {
+  .page {
+    max-width: 70%;
+    margin: auto;
+    padding-top: 30px;
+    .vertical-center {
+      display: flex;
+      align-items: center;
+    }
+    .row {
+      
+      .col-md-3 {
+        #profile-pic{
+          border-radius: 50%;
+          height: 200px;
+          width: 200px;
+        }
+      }
+      .col-md-4 {
+        #name{
+          color: #4589C8;
+          font-weight: bold;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-size: 2em;
+        }
+        .bold{
+          font-weight: bold;
+        }
+        .row {
+          .col-md-5 {
+            .green-button{
+              background-color:#00DA76 !important;
+              border-color: #22ce80 !important;
+            }
+            .blue-button{
+              background-color:#4589C8;
+              color:#FFFFFF;
+            }
+          }
+        }
+      }
+      .col-md-5 {
+        .row {
+          .col-md-2 {
+            .icon{
+              max-height: 40px;
+              max-height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: 80px;
+      .col-md-7 {
+        #map {
+          height: 400px;
+          width: 100%;
+        }
+        .content{
+          background-color: #F2F2F2;
+          border-radius: 2%;
+          padding: 10px 10px 10px 15px;
+        }
+        .roboto{
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+      }
+    }
+  }
+}

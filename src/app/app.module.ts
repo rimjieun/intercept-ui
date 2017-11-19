@@ -17,6 +17,8 @@ import { UsersComponent } from './users/users.component';
 import { SurveyComponent } from './survey/survey.component';
 import { SurveyFormComponent } from './common/survey-form/survey-form.component';
 import { TabsComponent } from './common/tabs/tabs.component';
+import { SearchResultsComponent } from './common/search-results/search-results.component';
+import { OrganizationProfileComponent } from './organization-profile/organization-profile.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TabsComponent } from './common/tabs/tabs.component';
     UsersComponent,
     SurveyComponent,
     SurveyFormComponent,
-    TabsComponent
+    TabsComponent,
+    SearchResultsComponent,
+    OrganizationProfileComponent
   ],
   imports: [
     BrowserModule,

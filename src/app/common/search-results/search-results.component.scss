@@ -1,0 +1,43 @@
+#search-results-component {
+  .flex-col {
+    width: 1000px;
+    margin: 50px auto 20px;
+    ul.search-results {
+      border-width:5px;  
+      border-style:groove;
+      background: white;
+      height: 550px;
+      overflow-y: scroll;
+      li {
+        align-items: center;
+        padding: 10px 0;
+        .info {
+          p {
+            margin: 0;
+            padding: 0;
+          }
+          p.name {
+            font-size: 25px;
+          }
+          p.location {
+            font-size: 20px;
+          }
+          p.contact {
+            font-size: 20px;
+          }
+        }
+        a {
+          display: inline;
+          border-radius: 10px;
+          border: none;
+          background: #4589C8;
+          color: white;
+          margin: 30px 30px;
+          padding: 5px 20px;
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
+}

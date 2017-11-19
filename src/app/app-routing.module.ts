@@ -7,6 +7,8 @@ import { LoginComponent } from 'app/login/login.component';
 import { UsersComponent } from 'app/users/users.component';
 import { SurveyComponent } from 'app/survey/survey.component';
 import { SurveyFormComponent } from 'app/common/survey-form/survey-form.component';
+import { SearchResultsComponent } from 'app/common/search-results/search-results.component';
+import { OrganizationProfileComponent } from 'app/organization-profile/organization-profile.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +17,9 @@ export const appRoutes: Routes = [
   { path: 'guide', component: GuideComponent },
   { path: 'users', component: UsersComponent },
   { path: 'survey', component: SurveyComponent },
-  { path: 'survey-form', component: SurveyFormComponent }
+  { path: 'survey-form', component: SurveyFormComponent },
+  { path: 'search-results', component: SearchResultsComponent },
+  { path: 'organization-profile', component: OrganizationProfileComponent }
 ];
 
 @NgModule({
