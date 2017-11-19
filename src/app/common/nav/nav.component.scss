@@ -1,0 +1,32 @@
+#nav-component {
+  #nav-container {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    height: 30px;
+
+      .nav-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        .nav-item {
+          margin: 5px 15px;
+          font-size: 13px;
+
+        }
+      }
+
+      #nav-wrapper-left {
+        /*width: 50%;*/
+        flex: 3;
+        justify-content: flex-start;
+      }
+      #nav-wrapper-right {
+        /*width: 50%;*/
+        flex: 1;
+        justify-content: flex-end;
+      }
+
+
+  }
+}

@@ -1,0 +1,12 @@
+#app-component {
+  padding: 5px 20px;
+
+  #title-wrapper {
+    height: 50px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    #title {
+      font-size: 30px;
+    }
+  }
+}
