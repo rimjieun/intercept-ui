@@ -1,5 +1,5 @@
 <div id="app-component">
-  <app-nav></app-nav>
+  <app-nav *ngIf="entered"></app-nav>
   <app-tabs></app-tabs>
   <router-outlet></router-outlet>
 </div>

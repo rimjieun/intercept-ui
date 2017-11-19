@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./survey-form.component.scss']
 })
 export class SurveyFormComponent implements OnInit {
-
+  question = "What is your gender?";
+  answers = []
   constructor() { }
 
   ngOnInit() {
