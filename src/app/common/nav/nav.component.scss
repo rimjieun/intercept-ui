@@ -1,32 +1,49 @@
-#nav-component {
-  #nav-container {
+.navbar-light {
+  background: #478cca !important;
+  position: relative;
+  #logo {
+    width: 180px;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    height: 30px;
+  }
 
-      .nav-wrapper {
-        display: flex;
-        flex-flow: row nowrap;
-        .nav-item {
-          margin: 5px 15px;
-          font-size: 13px;
+  .navbar-collapse {
+    position: absolute;
+    right: 0;
+    height: 100%;
 
+    ul {
+      height: 100%;
+      position: absolute;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      margin-right: 20px;
+
+      li {
+        height: 100%;
+        flex: 1;
+        text-align: center;
+
+        a {
+          padding: 20% 0;
+          font-size: 25px;
+          color: white;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 300;
         }
       }
 
-      #nav-wrapper-left {
-        /*width: 50%;*/
-        flex: 3;
-        justify-content: flex-start;
+      li.active {
+        background: #6AA1D3;
+        height: 100%;
       }
-      #nav-wrapper-right {
-        /*width: 50%;*/
-        flex: 1;
-        justify-content: flex-end;
-      }
-
-
+    }
   }
+
+  
+
+  
+  
 }
+

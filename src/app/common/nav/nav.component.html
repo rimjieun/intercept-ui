@@ -1,21 +1,19 @@
-<div id="nav-component">
-  <div id="nav-container">
-    <div id="nav-wrapper-left" class="nav-wrapper">
-      <div class="nav-item">
-          <a [routerLink]="['/']">Home</a>
-      </div>
-      <div class="nav-item">
-        <a [routerLink]="['/guide']">Guide</a>
-      </div>
-    </div>
-    <div id="nav-wrapper-right" class="nav-wrapper">
-      <div class="nav-item">
-      <a [routerLink]="['/login']">Log In</a>
-      </div>
-
-    </div>
-
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src='./../../assets/images/intercept-logo.png' alt='Intercept Logo' id='logo'></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/guide']">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/login']">Contact Us</a>
+      </li>
+    </ul>
   </div>
-
-</div>
+</nav>

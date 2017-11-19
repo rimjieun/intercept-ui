@@ -13,6 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { GuideComponent } from './guide/guide.component';
 import { AlertComponent } from './common/alert/alert.component';
 import { NavComponent } from './common/nav/nav.component';
+import { UsersComponent } from './users/users.component';
+import { SurveyComponent } from './survey/survey.component';
+import { SurveyFormComponent } from './common/survey-form/survey-form.component';
+import { TabsComponent } from './common/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { NavComponent } from './common/nav/nav.component';
     GuideComponent,
     AlertComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    UsersComponent,
+    SurveyComponent,
+    SurveyFormComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,

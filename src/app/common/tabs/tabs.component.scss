@@ -1,0 +1,25 @@
+#tabs-component {
+  div.fixed-tabs {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    z-index: 1;
+    a {
+      display: block;
+      font-size: 20px;
+      color: white;
+      width: 120px;
+      padding: 10% 0;
+      margin: 20px 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    a.quick-exit {
+      background: #336600;
+    }
+    a.get-help {
+      background: #993333;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#survey-component {
+  div.flex-col {
+    width: 700px;
+    margin: 100px auto;
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    a {
+      display: inline-block;
+      border-radius: 10px;
+      border: none;
+      background: #4589C8;
+      color: white;
+      align-self: center;
+      margin: 30px;
+      padding: 5px 30px;
+      font-size: 30px;
+    }
+  }
+}
