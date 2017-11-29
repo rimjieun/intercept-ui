@@ -1,15 +1,59 @@
 <div id="survey-form-component">
-  <div class="flex-col">
-    <form>
-      <h1><label for="question">{{question}}</label></h1>
-      <input type="radio" name="gender" value="male"> Female<br>
-      <input type="radio" name="gender" value="male"> Male<br>
-      <input type="radio" name="gender" value="male"> Transgender Male-to-Female<br>
-      <input type="radio" name="gender" value="male"> Transgender Male-to-Female<br>
-      <div class="form-btn">
-        <a herf="#">Previous</a>
-        <a [routerLink]="['/search-results']">Next</a>
-      </div>
-    </form>
+  <div class="question-box" *ngIf="!isEmergency">
+    <div class="flex-col template-radio" *ngIf="templateType == 'radio' || templateType == 'Radio' || templateType == 'YN'">
+      <form>
+        <h1><label for="question">{{question.questionText}}</label></h1>
+        <div class="radio" *ngFor="let option of question.answerPossibilities; let i = index"
+          (click)="selectOption(i)">
+          <label>
+            <input type="radio" name="radioOption" [value]="i"> {{option.text}}
+          </label>
+        </div>
+        <div class="form-btn" *ngIf="!isSubmitReady">
+          <a (click)="prev()">Previous</a>
+          <a (click)="next()">Next</a>
+        </div>
+        <div class="form-btn" *ngIf="isSubmitReady">
+          <!-- <a (click)="submit()">Submit</a> -->
+          <a [routerLink]="'/search-results'">Submit</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex-col template-text" *ngIf="templateType == 'text'">
+      <form>
+        <h1><label for="question">{{question.questionText}}</label></h1>
+        <fieldset>
+
+        </fieldset>
+        <label>Street</label>
+        <input type="text" name="address-street" class="form-control" [(ngModel)]="address.street">
+        <label>City</label>
+        <input type="text" name="address-city" class="form-control"  [(ngModel)]="address.city" required>
+        <label>State</label>
+        <input type="text" name="address-state" class="form-control"  [(ngModel)]="address.state" required>
+        <label>Zipcode</label>
+        <input type="text" name="address-zipcode" class="form-control"  [(ngModel)]="address.zipcode">
+        <div class="form-btn" *ngIf="!isSubmitReady">
+          <a (click)="prev()">Previous</a>
+          <a (click)="next()">Next</a>
+        </div>
+        <div class="form-btn" *ngIf="isSubmitReady">
+          <!-- <a (click)="submit()">Submit</a> -->
+          <a [routerLink]="'/search-results'">Submit</a>
+        </div>
+      </form>
+    </div>
+
   </div>
+
+  <div class="flex-col" *ngIf="isEmergency">
+    <h1>Call 911</h1>
+    <a [routerLink]="'/users'">Ok, I will call 911</a>
+  </div>
+
+  <!-- <div class="flex-col" *ngIf="isSubmitReady">
+    <button type="button" name="button" (click)="submitSurvey()">Submit</button>
+  </div> -->
+
 </div>

@@ -9,11 +9,12 @@ import { Subscription } from 'rxjs/Subscription';
 export class AppComponent implements OnInit {
   entered: boolean = false;
   navSub: Subscription;
+
   constructor(
     private navSvc: NavService
   ) { }
+  
   ngOnInit() {
-    console.log('app');
     this.navSub = this.navSvc.navReposit().subscribe(
       (data) => {
         console.log('open!');

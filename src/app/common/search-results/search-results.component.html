@@ -10,16 +10,16 @@
       <li class="info flex-row content-spread" *ngFor="let org of organizations">
         <div class="info">
           <p class="name">{{org.name}}</p>
-          <p class="location">{{org.service_area}}</p>
-          <p class="contact">{{org.contact_info.hotline.number}}</p>
+          <p class="location">{{org.service.area}}</p>
+          <p class="contact">{{org.hotline.number}}</p>
           <div class="tags">
             <!-- List organization tags here -->
-            <p class="tags" *ngFor="let tag of org.populations">{{tag}}</p>
+            <!-- <p class="tags" *ngFor="let tag of org.populations">{{tag}}</p> -->
           </div>
         </div>
         <div class="buttons">
         <a [routerLink]="['/organization-profile']" target="_blank">Learn More</a>
-        <a [href]="'http://' + org.contact_info.website" target="_blank">Website</a>
+        <a [href]="'http://' + org.website" target="_blank">Website</a>
       </div>
       </li>
     </ul>
